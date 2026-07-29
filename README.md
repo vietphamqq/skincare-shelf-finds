@@ -29,4 +29,4 @@ no medical/treatment claims; no invented stats or prices; no undisclosed affilia
 
 ## Newsletter
 
-Set `beehiiv_embed_url` in `_config.yml` to the beehiiv embed URL to activate the signup box site-wide.
+`beehiiv_form_id` in `_config.yml` holds the beehiiv subscribe-form id; the signup box renders site-wide via `_includes/newsletter.html`. Clear the value to hide it.

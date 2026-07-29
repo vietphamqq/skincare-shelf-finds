@@ -1,7 +1,7 @@
-{% if site.beehiiv_embed_url != "" %}
+{% if site.beehiiv_form_id != "" %}
 <div class="newsletter">
   <h3>Get the weekly shelf note</h3>
   <p>One short email every Friday: the week's guides, in plain language. No spam, unsubscribe anytime.</p>
-  <iframe src="{{ site.beehiiv_embed_url }}" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no"></iframe>
+  <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="{{ site.beehiiv_form_id }}"></script>
 </div>
 {% endif %}

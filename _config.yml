@@ -6,9 +6,9 @@ lang: en
 email: phamquangquocviet@gmail.com
 pinterest_url: "https://www.pinterest.com/phamquangquocviet/"
 
-# Paste your beehiiv embed URL here to activate the newsletter signup box site-wide.
+# beehiiv subscribe-form id — activates the newsletter signup box site-wide.
 # Leave empty to hide the signup box.
-beehiiv_embed_url: ""
+beehiiv_form_id: "7ddabd3b-fc91-423a-b195-cf82d64284fb"
 
 markdown: kramdown
 permalink: /:categories/:title/
