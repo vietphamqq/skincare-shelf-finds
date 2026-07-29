@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{{ content }}
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }} · {{ post.categories.first | replace:'-',' ' | capitalize }}</p>
+    <p class="post-excerpt">{{ post.description }}</p>
+  </li>
+  {% endfor %}
+</ul>

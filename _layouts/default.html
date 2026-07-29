@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — Curated Skincare Guides &amp; Product Picks{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+<div class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <div class="mark">S</div>
+      <span class="brand-name">Skincare Shelf Finds</span>
+    </a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/skin-types/' | relative_url }}">Skin Types</a>
+      <a href="{{ '/ingredients/' | relative_url }}">Ingredients</a>
+      <a href="{{ '/routine-basics/' | relative_url }}">Routine Basics</a>
+      <a href="{{ '/shelf-picks/' | relative_url }}">Shelf Picks</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+{{ content }}
+{% include newsletter.html %}
+</main>
+
+<footer class="wrap">
+  <a href="{{ '/about/' | relative_url }}">About</a> ·
+  <a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a> ·
+  <a href="{{ '/terms.html' | relative_url }}">Terms of Use</a> ·
+  <a href="{{ site.pinterest_url }}" rel="noopener">Pinterest</a>
+  <p style="margin-top:14px">© 2026 Skincare Shelf Finds. Educational content only — not medical advice.</p>
+</footer>
+</body>
+</html>
