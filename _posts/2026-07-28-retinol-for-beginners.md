@@ -4,6 +4,8 @@ title: "Retinol for Beginners: How to Start Without the Irritation"
 description: "Start retinol 1–2 nights a week with a pea-sized amount, buffer with moisturizer, and wear SPF daily — here's the full step-by-step."
 categories: [ingredients]
 date: 2026-07-28
+image: /assets/images/posts/retinol-for-beginners.jpg
+image_alt: "Serum dropper bottle on a minimal beige background"
 ---
 
 Starting retinol doesn't have to mean weeks of flaky, angry skin. The whole trick is going low and slow: a pea-sized amount, one or two nights a week to begin, plenty of moisturizer, and sunscreen every single morning. Here's exactly how to do it.
@@ -83,3 +85,11 @@ Friendly pairings, on the other hand: hyaluronic acid, niacinamide, ceramides, a
 - Broad-spectrum SPF 30+ every morning is non-negotiable while using retinoids.
 - Keep exfoliating acids, benzoyl peroxide, and scrubs off your retinol nights — alternate instead.
 - Patch test first, and see a board-certified dermatologist for persistent concerns.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [Retinol: What It Is, Benefits, How To Use — Cleveland Clinic](https://my.clevelandclinic.org/health/treatments/23293-retinol)
+- [Retinoid or retinol? — AAD](https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol)
+- [Do retinoids really reduce wrinkles? — Harvard Health](https://www.health.harvard.edu/healthy-aging-and-longevity/do-retinoids-really-reduce-wrinkles)

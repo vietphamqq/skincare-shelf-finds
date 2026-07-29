@@ -62,3 +62,6 @@ footer a { margin:0 10px; color:#8A7A72; }
   h1 { font-size:28px; }
   .site-nav { gap:2px 14px; font-size:14px; }
 }
+
+/* Post hero image */
+.post-hero { width:100%; height:auto; border-radius:16px; margin:8px 0 22px; display:block; }

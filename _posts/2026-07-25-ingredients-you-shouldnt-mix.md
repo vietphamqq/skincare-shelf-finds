@@ -4,6 +4,8 @@ title: "Skincare Ingredients You Shouldn't Mix in One Routine (And What to Do In
 description: "Retinoids, exfoliating acids, benzoyl peroxide, and vitamin C rarely belong in the same sitting — split them AM/PM or on alternate nights."
 categories: [ingredients]
 date: 2026-07-25
+image: /assets/images/posts/ingredients-you-shouldnt-mix.jpg
+image_alt: "Collection of different skincare serum bottles side by side"
 ---
 
 Most "don't mix" warnings in skincare really mean "don't pile these onto your face in the same sitting." Very few ingredient pairs are truly off-limits forever — the fix is almost always to split them between morning and evening, or across alternate nights. Here's which pairings deserve separation, why, and the easy schedules that let you keep using everything you love.
@@ -73,3 +75,11 @@ Adjust the days to taste — the principle is simply one strong active per sitti
 - Use low-pH vitamin C in the morning and exfoliating acids at night to avoid stacking sensitivity.
 - Niacinamide and hyaluronic acid play nicely with essentially everything.
 - One strong active per sitting, patch test new additions, and see a board-certified dermatologist for persistent concerns.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [Retinoid or retinol? — AAD](https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol)
+- [Retinol: What It Is, Benefits, How To Use — Cleveland Clinic](https://my.clevelandclinic.org/health/treatments/23293-retinol)
+- [How to safely exfoliate at home — AAD](https://www.aad.org/public/everyday-care/skin-care-secrets/routine/safely-exfoliate-at-home)

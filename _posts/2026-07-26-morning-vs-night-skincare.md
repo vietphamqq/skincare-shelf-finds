@@ -4,6 +4,8 @@ title: "Morning vs. Night Skincare: What Goes When, and Why"
 description: "Mornings are for protection — antioxidants and SPF. Nights are for treatment — retinoids and exfoliants. Here's exactly what goes when."
 categories: [routine-basics]
 date: 2026-07-26
+image: /assets/images/posts/morning-vs-night-skincare.jpg
+image_alt: "Skincare bottles in soft morning light on a bathroom shelf"
 ---
 
 The simplest way to split your routine: morning is for protecting your skin from the day ahead, and night is for treating and repairing it. Sunscreen and antioxidants belong to the morning; retinoids and exfoliating acids belong to the night. Cleansing and moisturizing belong to both.
@@ -84,3 +86,11 @@ And a note worth repeating: skincare products are cosmetic tools. If you're deal
 - Don't double up on retinoids, exfoliating acids, or harsh cleansers — irritation undoes progress.
 - The minimalist version — moisturizer and SPF in the morning, cleanse and moisturize at night — is a genuinely complete routine.
 - Patch test new actives, add them slowly, and see a dermatologist for anything persistent.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [Tips to Stay Safe in the Sun — FDA](https://www.fda.gov/consumers/consumer-updates/tips-stay-safe-sun-sunscreen-sunglasses)
+- [Sun protection — MedlinePlus](https://medlineplus.gov/ency/patientinstructions/000378.htm)
+- [10 skin care secrets for healthier-looking skin — AAD](https://www.aad.org/public/everyday-care/skin-care-secrets/routine/healthier-looking-skin)

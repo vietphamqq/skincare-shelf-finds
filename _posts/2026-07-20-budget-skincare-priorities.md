@@ -4,6 +4,8 @@ title: "Building a Skincare Routine on a Budget: What to Prioritize (and What to
 description: "On a budget, fund the basics first — cleanser, moisturizer, sunscreen — add one active at a time, and skip the ten-step extras."
 categories: [shelf-picks]
 date: 2026-07-20
+image: /assets/images/posts/budget-skincare-priorities.jpg
+image_alt: "Simple, minimal skincare products on a white background"
 ---
 
 When money is limited, skincare gets refreshingly simple: put your budget into a cleanser, a moisturizer, and a sunscreen you'll actually use every day. Add actives later, one at a time, and skip everything else until those three are solid.
@@ -70,3 +72,11 @@ Start with your skin type — our [skin types]({{ '/skin-types/' | relative_url 
 - Skip ten-step routines, single-purpose extras, gadgets, and hype buys — that's sequencing, not settling.
 - Add actives one at a time, patch tested, only after the basics are habit.
 - For persistent skin concerns, a board-certified dermatologist beats another shopping trip.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [Skin care on a budget — AAD](https://www.aad.org/public/everyday-care/skin-care-basics/care/skin-care-budget)
+- [Daily skin care in 3 simple steps — Harvard Health](https://www.health.harvard.edu/healthy-aging-and-longevity/daily-skin-care-in-3-simple-steps)
+- [Tips to Stay Safe in the Sun — FDA](https://www.fda.gov/consumers/consumer-updates/tips-stay-safe-sun-sunscreen-sunglasses)

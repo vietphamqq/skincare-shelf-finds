@@ -4,6 +4,8 @@ title: "Combination Skin: How to Build a Routine That Handles Both"
 description: "One gentle routine with middle-ground textures, zoning richer products onto dry areas and lighter ones onto the T-zone, handles combination skin."
 categories: [skin-types]
 date: 2026-07-21
+image: /assets/images/posts/combination-skin-routine.jpg
+image_alt: "Organized skincare shelf in a bathroom"
 ---
 
 Combination skin doesn't need two full routines — it needs one sensible routine with a little zoning. Use gentle, middle-of-the-road products everywhere, then adjust where you put the richer and lighter layers: more moisture on dry cheeks, less on an oily T-zone.
@@ -71,3 +73,10 @@ If you're second-guessing whether you're combination at all, our [skin types]({{
 - Buy middle-ground textures — gel-cream cleansers, lotions, fluid SPF — so one product can serve both zones.
 - Zone only when a zone complains; if your whole face is comfortable with one simple routine, keep it simple.
 - Patch test any new active, and see a board-certified dermatologist for persistent skin concerns.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [What Is My Skin Type and Why Does It Matter? — Cleveland Clinic](https://health.clevelandclinic.org/understanding-skin-types)
+- [Skin care: 5 tips for healthy skin — Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/skin-care/art-20048237)

@@ -4,6 +4,8 @@ title: "A Simple Skincare Routine for Dry Skin (Focus on the Barrier)"
 description: "A barrier-first routine for dry skin: cream cleanser, humectant serum on damp skin, a rich moisturizer, occlusives at night, and SPF every morning."
 categories: [skin-types]
 date: 2026-07-24
+image: /assets/images/posts/dry-skin-routine.jpg
+image_alt: "Rich moisturizer cream jar in a cozy setting"
 ---
 
 Dry skin does best with a routine built around one idea: protect the barrier. That means a cream cleanser that doesn't strip, hydration layered onto damp skin, a moisturizer to seal it in, and sunscreen every morning — while cutting out the everyday habits that quietly dry skin out.
@@ -66,3 +68,11 @@ One important line to draw: dryness that comes with intense itching, cracking, r
 - On very dry nights, finish with a thin occlusive layer on the driest zones.
 - Cut the drying habits: hot water, harsh foaming cleansers, over-exfoliating, over-washing.
 - Broad-spectrum SPF 30+ every morning — and for persistent dryness, itching, or cracking, see a board-certified dermatologist.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [Dermatologists' top tips for relieving dry skin — AAD](https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin)
+- [How to moisturize your skin — Harvard Health](https://www.health.harvard.edu/healthy-aging-and-longevity/how-to-moisturize-your-skin)
+- [Dry Skin (Xeroderma) — Cleveland Clinic](https://my.clevelandclinic.org/health/diseases/16940-dry-skin)

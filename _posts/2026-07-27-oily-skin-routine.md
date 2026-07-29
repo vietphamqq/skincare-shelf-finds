@@ -4,6 +4,8 @@ title: "A Simple Skincare Routine for Oily Skin (That Won't Strip It)"
 description: "A gentle AM and PM routine for oily skin: gel cleanser, light moisturizer, SPF, and an optional BHA a few nights a week."
 categories: [skin-types]
 date: 2026-07-27
+image: /assets/images/posts/oily-skin-routine.jpg
+image_alt: "Fresh gel cleanser and light skincare products"
 ---
 
 The best routine for oily skin is a gentle one: a gel cleanser, a lightweight moisturizer, sunscreen in the morning, and an optional BHA a few nights a week. That's it. The instinct to scrub oily skin into submission is exactly what tends to backfire.
@@ -65,3 +67,11 @@ One honest caveat: a routine manages oily skin; it doesn't switch it off. Oil pr
 - Oily skin still needs moisturizer; oil and hydration are not the same thing.
 - Pick lighter textures across the board: gels and lotions over heavy creams.
 - For persistent breakouts or concerns that don't improve, see a board-certified dermatologist.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [How to control oily skin — AAD](https://www.aad.org/public/everyday-care/skin-care-basics/dry/oily-skin)
+- [8 Tips To Get Rid of Oily Skin — Cleveland Clinic](https://health.clevelandclinic.org/how-to-get-rid-of-oily-skin)
+- [Face washing 101 — AAD](https://www.aad.org/public/everyday-care/skin-care-basics/care/face-washing-101)

@@ -4,6 +4,8 @@ title: "Skin Cycling: The 4-Night Routine, Explained Simply"
 description: "Skin cycling is a 4-night rotation — exfoliate, retinoid, then two recovery nights — that spaces out actives so skin gets results with less irritation."
 categories: [routine-basics]
 date: 2026-07-23
+image: /assets/images/posts/skin-cycling-explained.jpg
+image_alt: "Night cream jar and skincare products on a bedside table"
 ---
 
 Skin cycling is a four-night rotation for your evening routine: one exfoliation night, one retinoid night, then two recovery nights of just gentle cleansing and moisturizing — and then the cycle repeats. The whole idea is to space out your strong actives so your skin gets the benefits with far less of the irritation.
@@ -69,3 +71,11 @@ If you're still choosing your first exfoliant or retinoid, our [ingredients]({{ 
 - Adapt freely: stretch the cycle with extra recovery nights for sensitive skin, or compress it once your skin proves comfortable.
 - Wear broad-spectrum SPF 30+ every morning — especially important alongside acids and retinoids.
 - Patch test any new active, and see a board-certified dermatologist for persistent skin concerns.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [How to safely exfoliate at home — AAD](https://www.aad.org/public/everyday-care/skin-care-secrets/routine/safely-exfoliate-at-home)
+- [Retinoid or retinol? — AAD](https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol)
+- [Retinol: What It Is, Benefits, How To Use — Cleveland Clinic](https://my.clevelandclinic.org/health/treatments/23293-retinol)

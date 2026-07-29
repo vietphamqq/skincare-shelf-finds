@@ -4,6 +4,8 @@ title: "The Correct Order to Apply Skincare Products (Morning and Night)"
 description: "Apply skincare from thinnest to thickest: cleanser, then serums, then moisturizer, with sunscreen last in the morning. Here's the full order."
 categories: [routine-basics]
 date: 2026-07-29
+image: /assets/images/posts/skincare-routine-order.jpg
+image_alt: "Flat lay of skincare products arranged in order on a neutral background"
 ---
 
 The short answer: apply your products from thinnest texture to thickest, finishing with sunscreen in the morning. Cleanser comes first, watery serums next, creams after that, and SPF (or a richer night moisturizer) seals everything in. Once you know that one rule, almost every routine question answers itself.
@@ -71,3 +73,11 @@ If your skin stays irritated, or a persistent concern isn't improving with a con
 - Eye cream goes wherever its texture fits; spot treatments go on clean skin before moisturizer.
 - Waiting between steps is mostly unnecessary — except letting skin dry before a retinoid and letting sunscreen set.
 - Patch test new actives, use one at a time, and keep the routine short enough to do every day.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [Should I apply my skin care products in a certain order? — AAD](https://www.aad.org/public/everyday-care/skin-care-basics/care/apply-skin-care-certain-order)
+- [How to apply sunscreen — AAD](https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen)
+- [How to moisturize your skin — Harvard Health](https://www.health.harvard.edu/healthy-aging-and-longevity/how-to-moisturize-your-skin)

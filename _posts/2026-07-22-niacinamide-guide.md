@@ -4,6 +4,8 @@ title: "Niacinamide: What It Actually Does, and How to Use It"
 description: "Niacinamide is a gentle vitamin B3 ingredient used to help the look of pores and uneven tone — 5% is plenty, and it layers with nearly anything."
 categories: [ingredients]
 date: 2026-07-22
+image: /assets/images/posts/niacinamide-guide.jpg
+image_alt: "Minimal serum bottle on a beige studio background"
 ---
 
 Niacinamide is a form of vitamin B3 that shows up in everything from serums to moisturizers, and its reputation as a do-a-little-of-everything ingredient is mostly earned. It's commonly used to help the look of enlarged pores and uneven tone and to support a comfortable, healthy-looking moisture barrier — and unlike many actives, it's gentle enough that almost anyone can slot it into a routine without drama.
@@ -76,3 +78,10 @@ The only realistic caution: if your skin flushes or stings when you combine a hi
 - Use it AM or PM, daily, as a serum or simply inside your moisturizer — one product with it is enough.
 - It pairs comfortably with retinoids, acids, vitamin C, and basically everything else.
 - Patch test new products, and see a board-certified dermatologist for persistent skin concerns.
+
+## Sources & further reading
+
+This guide draws on publicly available guidance from dermatology and health organizations:
+
+- [Nicotinamide (niacinamide) for skin aging and pigmentation: review — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8389214/)
+- [Topical niacinamide and the skin barrier — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8365309/)
