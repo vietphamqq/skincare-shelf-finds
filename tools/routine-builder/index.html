@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skincare Routine Builder — Free Printable Routine Card | Skincare Shelf Finds</title>
+<meta name="description" content="Build your AM/PM skincare routine step by step, get gentle heads-ups on active pairings, and download a beautiful routine card to print or pin. Free, no signup.">
+<style>
+  :root{
+    --bg:#faf6f1; --card:#ffffff; --ink:#3d3733; --ink-soft:#7a726b;
+    --accent:#c98a6d; --accent-soft:#f3e3da; --sage:#8fa58b; --sage-soft:#e8efe6;
+    --line:#e9e1d8; --warn:#b4762f; --warn-soft:#f8ecd9; --radius:14px;
+    font-size:16px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:Georgia,'Times New Roman',serif; background:var(--bg); color:var(--ink); line-height:1.55;}
+  .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;}
+  header.site{max-width:1060px; margin:0 auto; padding:28px 20px 8px;}
+  header.site .brand{font-size:.85rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-family:-apple-system,'Segoe UI',sans-serif; font-weight:600;}
+  h1{font-size:2rem; font-weight:normal; margin-top:6px;}
+  .sub{color:var(--ink-soft); max-width:640px; margin-top:6px;}
+  main{max-width:1060px; margin:0 auto; padding:20px; display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:start;}
+  @media (max-width:900px){ main{grid-template-columns:1fr;} }
+  .panel{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:22px;}
+  .panel h2{font-size:1.05rem; letter-spacing:.06em; text-transform:uppercase; font-family:-apple-system,'Segoe UI',sans-serif; font-weight:600; color:var(--ink); margin-bottom:12px;}
+  fieldset{border:none; margin-bottom:18px;}
+  label.top{display:block; font-family:-apple-system,'Segoe UI',sans-serif; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:8px;}
+  input[type=text]{width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fffdfb;}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{border:1px solid var(--line); background:#fffdfb; border-radius:999px; padding:7px 14px; cursor:pointer; font-family:-apple-system,'Segoe UI',sans-serif; font-size:.85rem; user-select:none; transition:all .12s;}
+  .chip:hover{border-color:var(--accent);}
+  .chip.on{background:var(--accent-soft); border-color:var(--accent); color:#8a5138; font-weight:600;}
+  .routine-cols{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:560px){ .routine-cols{grid-template-columns:1fr;} }
+  .rt{border:1px dashed var(--line); border-radius:10px; padding:12px; min-height:120px;}
+  .rt h3{font-family:-apple-system,'Segoe UI',sans-serif; font-size:.8rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:8px;}
+  .step{display:flex; align-items:center; gap:8px; background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:7px 10px; margin-bottom:6px; font-size:.92rem;}
+  .step .n{font-family:-apple-system,'Segoe UI',sans-serif; font-size:.72rem; color:var(--accent); font-weight:700; min-width:16px;}
+  .step .x{margin-left:auto; cursor:pointer; color:var(--ink-soft); border:none; background:none; font-size:1rem; padding:0 3px;}
+  .step .x:hover{color:var(--accent);}
+  .step .mv{cursor:pointer; color:var(--ink-soft); border:none; background:none; font-size:.8rem; padding:0 2px;}
+  .hint{font-size:.85rem; color:var(--ink-soft); font-style:italic; margin-top:4px;}
+  .notice{border-radius:10px; padding:12px 14px; margin-top:14px; font-size:.9rem; display:none;}
+  .notice.warn{display:block; background:var(--warn-soft); border:1px solid #ecd9b7; color:#6e4a1e;}
+  .notice.ok{display:block; background:var(--sage-soft); border:1px solid #d3e0d0; color:#44603f;}
+  .notice ul{margin:6px 0 0 18px;}
+  .notice li{margin-bottom:4px;}
+  .btnrow{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;}
+  button.primary{background:var(--accent); color:#fff; border:none; border-radius:999px; padding:12px 22px; font-family:-apple-system,'Segoe UI',sans-serif; font-weight:600; font-size:.95rem; cursor:pointer;}
+  button.primary:hover{filter:brightness(.95);}
+  button.ghost{background:none; border:1px solid var(--line); border-radius:999px; padding:12px 22px; font-family:-apple-system,'Segoe UI',sans-serif; font-size:.95rem; cursor:pointer; color:var(--ink);}
+  /* ---- Card preview ---- */
+  .preview-wrap{position:sticky; top:16px;}
+  .preview-scale{width:100%; overflow:hidden; border-radius:var(--radius); border:1px solid var(--line); background:#fff;}
+  #card{width:1000px; height:1500px; transform-origin:top left; background:linear-gradient(175deg,#fdfaf6 0%,#f7ece3 55%,#f2e2d6 100%); position:relative; font-family:Georgia,serif; color:#3d3733;}
+  #card .inner{position:absolute; inset:56px; border:2px solid #d9bfa9; border-radius:26px; padding:64px 70px; display:flex; flex-direction:column;}
+  #card .kicker{font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-size:26px; letter-spacing:.22em; text-transform:uppercase; color:#c98a6d; font-weight:600; text-align:center;}
+  #card h2.title{font-size:74px; font-weight:normal; text-align:center; margin:14px 0 6px; line-height:1.12;}
+  #card .for{font-size:30px; font-style:italic; color:#7a726b; text-align:center; margin-bottom:40px;}
+  #card .cols{display:flex; gap:44px; flex:1;}
+  #card .col{flex:1;}
+  #card .col h3{font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-size:30px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; padding-bottom:14px; border-bottom:2px solid #d9bfa9; margin-bottom:26px;}
+  #card .col.am h3{color:#b0763f;}
+  #card .col.pm h3{color:#6d7d9c;}
+  #card ol{list-style:none;}
+  #card ol li{display:flex; gap:18px; align-items:baseline; margin-bottom:24px; font-size:33px; line-height:1.3;}
+  #card ol li .num{font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-size:24px; font-weight:700; color:#c98a6d; min-width:34px;}
+  #card ol li .tag{display:block; font-size:23px; color:#9a8f86; font-style:italic;}
+  #card .tip{background:#ffffffcc; border:1px solid #e3d2c2; border-radius:18px; padding:26px 30px; font-size:27px; font-style:italic; color:#6e6259; margin-top:8px;}
+  #card .foot{margin-top:32px; text-align:center; font-family:'Segoe UI',Helvetica,Arial,sans-serif; font-size:23px; letter-spacing:.12em; text-transform:uppercase; color:#b39c8a;}
+  footer.site{max-width:1060px; margin:10px auto 40px; padding:0 20px; font-size:.82rem; color:var(--ink-soft);}
+  footer.site a{color:var(--accent);}
+  .disclaimer{margin-top:8px;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="brand">Skincare Shelf Finds · Free Tool</div>
+  <h1>Skincare Routine Builder</h1>
+  <p class="sub">Pick your steps, get gentle heads-ups on how actives are commonly scheduled, and download a routine card you can print, save, or pin. No signup, nothing stored.</p>
+</header>
+
+<main>
+  <!-- ============ BUILDER ============ -->
+  <section class="panel" aria-label="Routine builder">
+    <h2>1 · Build your routine</h2>
+
+    <fieldset>
+      <label class="top" for="rname">Name on the card (optional)</label>
+      <input type="text" id="rname" maxlength="28" placeholder="e.g. Emma's Winter Routine">
+    </fieldset>
+
+    <fieldset>
+      <label class="top">Skin type</label>
+      <div class="chips" id="skin">
+        <span class="chip" data-v="Dry">Dry</span>
+        <span class="chip" data-v="Oily">Oily</span>
+        <span class="chip on" data-v="Combination">Combination</span>
+        <span class="chip" data-v="Sensitive">Sensitive</span>
+        <span class="chip" data-v="Normal">Normal</span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label class="top">Tap steps to add them (they land in the routine you choose below)</label>
+      <div class="chips" id="targetPick" style="margin-bottom:10px;">
+        <span class="chip on" data-v="am">Adding to ☀️ AM</span>
+        <span class="chip" data-v="pm">Adding to 🌙 PM</span>
+      </div>
+      <div class="chips" id="steps">
+        <span class="chip" data-step="Cleanser">Cleanser</span>
+        <span class="chip" data-step="Toner">Toner</span>
+        <span class="chip" data-step="Vitamin C serum" data-active="vitc">Vitamin C serum</span>
+        <span class="chip" data-step="Niacinamide serum" data-active="niacinamide">Niacinamide serum</span>
+        <span class="chip" data-step="Hyaluronic acid serum">Hyaluronic acid</span>
+        <span class="chip" data-step="AHA exfoliant" data-active="aha">AHA exfoliant</span>
+        <span class="chip" data-step="BHA exfoliant" data-active="bha">BHA exfoliant</span>
+        <span class="chip" data-step="Retinoid" data-active="retinoid">Retinoid</span>
+        <span class="chip" data-step="Benzoyl peroxide" data-active="bp">Benzoyl peroxide</span>
+        <span class="chip" data-step="Azelaic acid" data-active="azelaic">Azelaic acid</span>
+        <span class="chip" data-step="Eye cream">Eye cream</span>
+        <span class="chip" data-step="Moisturizer">Moisturizer</span>
+        <span class="chip" data-step="Face oil">Face oil</span>
+        <span class="chip" data-step="Sunscreen SPF 30+" data-active="spf">Sunscreen</span>
+      </div>
+      <p class="hint">Tip: a routine you'll actually repeat beats a 10-step masterpiece.</p>
+    </fieldset>
+
+    <div class="routine-cols">
+      <div class="rt" id="amList"><h3>☀️ Morning</h3></div>
+      <div class="rt" id="pmList"><h3>🌙 Evening</h3></div>
+    </div>
+
+    <div class="notice" id="notice" role="status"></div>
+
+    <div class="btnrow">
+      <button class="primary" id="dl">Download routine card (PNG)</button>
+      <button class="ghost" id="reset">Start over</button>
+    </div>
+    <p class="hint" id="dlhint" style="display:none;">Preparing your card…</p>
+  </section>
+
+  <!-- ============ PREVIEW ============ -->
+  <section class="preview-wrap" aria-label="Card preview">
+    <h2 class="sans" style="font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:8px;">2 · Your card (1000×1500 — perfect for Pinterest &amp; printing)</h2>
+    <div class="preview-scale" id="scaleBox">
+      <div id="card">
+        <div class="inner">
+          <div class="kicker">My Skincare Routine</div>
+          <h2 class="title" id="cTitle">My Routine</h2>
+          <div class="for" id="cFor">Combination skin</div>
+          <div class="cols">
+            <div class="col am"><h3>☀️ Morning</h3><ol id="cAm"></ol></div>
+            <div class="col pm"><h3>🌙 Evening</h3><ol id="cPm"></ol></div>
+          </div>
+          <div class="tip" id="cTip">Consistency over intensity — introduce one new active at a time.</div>
+          <div class="foot">made with skincareshelffinds · routine builder</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <p>More free tools &amp; honest shelf picks at <a href="../../">Skincare Shelf Finds</a>.</p>
+  <p class="disclaimer">This tool is for planning and organization only — it isn't medical advice, and pairing notes reflect commonly published usage guidance, not rules. Skin tolerance is individual; patch-test new products and follow the instructions on yours. For persistent concerns, see a dermatologist.</p>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var am = [], pm = [];              // arrays of {label, active}
+  var target = "am";
+  var TIPS = {
+    Dry:"Layer hydration first, seal with moisturizer — and don't fear face oils.",
+    Oily:"Lightweight layers win. One exfoliating step per routine is plenty.",
+    Combination:"Consistency over intensity — introduce one new active at a time.",
+    Sensitive:"Fewer steps, fragrance-free picks, and patch-test everything new.",
+    Normal:"Protect what works: gentle cleanse, hydrate, SPF every morning."
+  };
+
+  // ---------- pairing guidance (informational, gentle wording) ----------
+  function adviceFor(list, when){
+    var a = {}; list.forEach(function(s){ if(s.active) a[s.active]=true; });
+    var msgs = [];
+    function has(x){ return !!a[x]; }
+    if(has("retinoid") && (has("aha")||has("bha")))
+      msgs.push("Retinoid + AHA/BHA in the same routine is commonly split onto alternate nights to keep irritation down.");
+    if(has("retinoid") && has("bp"))
+      msgs.push("Benzoyl peroxide and retinoids are often scheduled apart (BP in the morning, retinoid at night).");
+    if(has("retinoid") && has("vitc"))
+      msgs.push("Vitamin C is usually placed in the morning and retinoid at night, rather than layered together.");
+    if(has("vitc") && (has("aha")||has("bha")))
+      msgs.push("Vitamin C + exfoliating acids together can feel harsh — many people split them AM/PM or by day.");
+    if(has("aha") && has("bha"))
+      msgs.push("Two exfoliants in one routine is a lot — one exfoliating step per routine is the common advice.");
+    if(when==="am" && has("retinoid"))
+      msgs.push("Retinoids are typically used at night — most increase sun sensitivity.");
+    if(when==="pm" && has("spf"))
+      msgs.push("Sunscreen belongs in the morning routine — no SPF needed at night.");
+    if(when==="am" && list.length>0 && !has("spf"))
+      msgs.push("No SPF in your morning routine yet — sunscreen is the one step almost every guide agrees on.");
+    return msgs;
+  }
+
+  // ---------- render ----------
+  function esc(s){ var d=document.createElement("span"); d.textContent=s; return d.innerHTML; }
+  function stepTag(s){
+    if(!s.active) return "";
+    var map={retinoid:"night active", vitc:"antioxidant", aha:"exfoliant", bha:"exfoliant",
+             bp:"treatment", azelaic:"active", niacinamide:"active", spf:"non-negotiable"};
+    return map[s.active]||"";
+  }
+  function renderLists(){
+    [["amList",am,"am"],["pmList",pm,"pm"]].forEach(function(cfg){
+      var el=document.getElementById(cfg[0]); var list=cfg[1]; var when=cfg[2];
+      el.querySelectorAll(".step").forEach(function(n){n.remove();});
+      list.forEach(function(s,i){
+        var div=document.createElement("div"); div.className="step";
+        div.innerHTML='<span class="n">'+(i+1)+'</span><span>'+esc(s.label)+'</span>'
+          +'<button class="mv" title="Move up" aria-label="Move up">▲</button>'
+          +'<button class="mv" title="Move down" aria-label="Move down">▼</button>'
+          +'<button class="x" title="Remove" aria-label="Remove">✕</button>';
+        var btns=div.querySelectorAll("button");
+        btns[0].onclick=function(){ if(i>0){ list.splice(i-1,0,list.splice(i,1)[0]); update(); } };
+        btns[1].onclick=function(){ if(i<list.length-1){ list.splice(i+1,0,list.splice(i,1)[0]); update(); } };
+        btns[2].onclick=function(){ list.splice(i,1); update(); };
+        el.appendChild(div);
+      });
+    });
+  }
+  function renderCard(){
+    var name=document.getElementById("rname").value.trim();
+    document.getElementById("cTitle").textContent = name || "My Routine";
+    var skin=document.querySelector("#skin .chip.on");
+    var skinV = skin ? skin.getAttribute("data-v") : "Combination";
+    document.getElementById("cFor").textContent = skinV + " skin";
+    document.getElementById("cTip").textContent = TIPS[skinV];
+    [["cAm",am],["cPm",pm]].forEach(function(cfg){
+      var ol=document.getElementById(cfg[0]); ol.innerHTML="";
+      if(cfg[1].length===0){
+        ol.innerHTML='<li><span class="num">–</span><span style="color:#b3a89e;font-style:italic;">no steps yet</span></li>';
+        return;
+      }
+      cfg[1].forEach(function(s,i){
+        var li=document.createElement("li");
+        var t=stepTag(s);
+        li.innerHTML='<span class="num">'+String(i+1).padStart(2,"0")+'</span><span>'+esc(s.label)+(t?'<span class="tag">'+t+'</span>':'')+'</span>';
+        ol.appendChild(li);
+      });
+    });
+  }
+  function renderNotice(){
+    var msgs = adviceFor(am,"am").concat(adviceFor(pm,"pm"));
+    var box=document.getElementById("notice");
+    if(am.length===0 && pm.length===0){ box.className="notice"; box.innerHTML=""; return; }
+    if(msgs.length){
+      box.className="notice warn";
+      box.innerHTML="<strong>Worth knowing</strong> (common guidance, not rules):<ul>"+msgs.map(function(m){return "<li>"+m+"</li>";}).join("")+"</ul>";
+    } else {
+      box.className="notice ok";
+      box.innerHTML="Nice — no common pairing flags in this routine. Consistency is the whole game now.";
+    }
+  }
+  function update(){ renderLists(); renderCard(); renderNotice(); }
+
+  // ---------- interactions ----------
+  document.getElementById("skin").addEventListener("click",function(e){
+    var c=e.target.closest(".chip"); if(!c) return;
+    this.querySelectorAll(".chip").forEach(function(x){x.classList.remove("on");});
+    c.classList.add("on"); update();
+  });
+  document.getElementById("targetPick").addEventListener("click",function(e){
+    var c=e.target.closest(".chip"); if(!c) return;
+    this.querySelectorAll(".chip").forEach(function(x){x.classList.remove("on");});
+    c.classList.add("on"); target=c.getAttribute("data-v");
+  });
+  document.getElementById("steps").addEventListener("click",function(e){
+    var c=e.target.closest(".chip"); if(!c) return;
+    var list = target==="am" ? am : pm;
+    if(list.length>=8){ alert("8 steps is already a lot — keep it doable!"); return; }
+    list.push({label:c.getAttribute("data-step"), active:c.getAttribute("data-active")||null});
+    update();
+  });
+  document.getElementById("rname").addEventListener("input", renderCard);
+  document.getElementById("reset").onclick=function(){ am=[]; pm=[]; document.getElementById("rname").value=""; update(); };
+
+  // ---------- preview scaling ----------
+  function scale(){
+    var box=document.getElementById("scaleBox"), card=document.getElementById("card");
+    var s=box.clientWidth/1000;
+    card.style.transform="scale("+s+")";
+    box.style.height=(1500*s)+"px";
+  }
+  window.addEventListener("resize",scale);
+
+  // ---------- download: draw the card natively on canvas (no dependencies) ----------
+  var SERIF='Georgia, "Times New Roman", serif';
+  var SANS='"Segoe UI", Helvetica, Arial, sans-serif';
+  function wrapText(ctx, text, maxW){
+    var words=text.split(" "), lines=[], line="";
+    words.forEach(function(w){
+      var t=line?line+" "+w:w;
+      if(ctx.measureText(t).width>maxW && line){ lines.push(line); line=w; } else line=t;
+    });
+    if(line) lines.push(line);
+    return lines;
+  }
+  function roundRect(ctx,x,y,w,h,r){
+    ctx.beginPath();
+    ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r);
+    ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath();
+  }
+  function drawColumn(ctx, list, x, w, y0, title, titleColor){
+    ctx.font="700 30px "+SANS; ctx.fillStyle=titleColor; ctx.textAlign="left";
+    ctx.fillText(title.toUpperCase(), x, y0);
+    ctx.strokeStyle="#d9bfa9"; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(x, y0+18); ctx.lineTo(x+w, y0+18); ctx.stroke();
+    var y=y0+72;
+    if(list.length===0){
+      ctx.font="italic 30px "+SERIF; ctx.fillStyle="#b3a89e";
+      ctx.fillText("no steps yet", x, y);
+      return y+40;
+    }
+    list.forEach(function(s,i){
+      ctx.font="700 24px "+SANS; ctx.fillStyle="#c98a6d";
+      ctx.fillText(String(i+1).padStart(2,"0"), x, y);
+      ctx.font="33px "+SERIF; ctx.fillStyle="#3d3733";
+      var lines=wrapText(ctx, s.label, w-52);
+      lines.forEach(function(ln,j){ ctx.fillText(ln, x+52, y+j*40); });
+      y+=lines.length*40;
+      var t=stepTag(s);
+      if(t){ ctx.font="italic 23px "+SERIF; ctx.fillStyle="#9a8f86"; ctx.fillText(t, x+52, y); y+=34; }
+      y+=22;
+    });
+    return y;
+  }
+  function drawCard(){
+    var c=document.createElement("canvas"); c.width=1000; c.height=1500;
+    var ctx=c.getContext("2d");
+    // background gradient
+    var g=ctx.createLinearGradient(0,0,120,1500);
+    g.addColorStop(0,"#fdfaf6"); g.addColorStop(.55,"#f7ece3"); g.addColorStop(1,"#f2e2d6");
+    ctx.fillStyle=g; ctx.fillRect(0,0,1000,1500);
+    // border frame
+    ctx.strokeStyle="#d9bfa9"; ctx.lineWidth=2;
+    roundRect(ctx,56,56,1000-112,1500-112,26); ctx.stroke();
+    // kicker
+    ctx.textAlign="center";
+    ctx.font="600 26px "+SANS; ctx.fillStyle="#c98a6d";
+    ctx.fillText("M Y   S K I N C A R E   R O U T I N E", 500, 160);
+    // title (wrap if long)
+    var name=document.getElementById("rname").value.trim()||"My Routine";
+    ctx.font="74px "+SERIF; ctx.fillStyle="#3d3733";
+    var titleLines=wrapText(ctx,name,760); var ty=248;
+    titleLines.slice(0,2).forEach(function(ln){ ctx.fillText(ln,500,ty); ty+=82; });
+    // skin type
+    var skin=document.querySelector("#skin .chip.on");
+    var skinV=skin?skin.getAttribute("data-v"):"Combination";
+    ctx.font="italic 30px "+SERIF; ctx.fillStyle="#7a726b";
+    ctx.fillText(skinV+" skin", 500, ty+4);
+    // columns
+    var colTop=ty+90, colW=372, x1=126, x2=126+colW+44+8;
+    var yEnd1=drawColumn(ctx, am, x1, colW, colTop, "☀  Morning", "#b0763f");
+    var yEnd2=drawColumn(ctx, pm, x2, colW, colTop, "🌙  Evening", "#6d7d9c");
+    // tip box
+    var tipY=Math.max(yEnd1,yEnd2,1150); if(tipY>1240) tipY=1240;
+    ctx.fillStyle="rgba(255,255,255,.8)"; ctx.strokeStyle="#e3d2c2"; ctx.lineWidth=1.5;
+    roundRect(ctx,126,tipY,748,140,18); ctx.fill(); ctx.stroke();
+    ctx.font="italic 27px "+SERIF; ctx.fillStyle="#6e6259"; ctx.textAlign="center";
+    var tipLines=wrapText(ctx, TIPS[skinV], 680);
+    var tly=tipY+58+(tipLines.length===1?14:0);
+    tipLines.slice(0,2).forEach(function(ln){ ctx.fillText(ln,500,tly); tly+=38; });
+    // footer
+    ctx.font="23px "+SANS; ctx.fillStyle="#b39c8a";
+    ctx.fillText("M A D E   W I T H   S K I N C A R E   S H E L F   F I N D S", 500, 1414);
+    return c;
+  }
+  document.getElementById("dl").onclick=function(){
+    var hint=document.getElementById("dlhint"); hint.style.display="block";
+    try{
+      var canvas=drawCard();
+      var a=document.createElement("a");
+      var name=(document.getElementById("rname").value.trim()||"my-skincare-routine").toLowerCase().replace(/[^a-z0-9]+/g,"-");
+      a.download=name+"-card.png";
+      a.href=canvas.toDataURL("image/png");
+      document.body.appendChild(a); a.click(); a.remove();
+    }catch(err){
+      if(window.console) console.error(err);
+    }
+    hint.style.display="none";
+  };
+
+  // ---------- starter demo ----------
+  am=[{label:"Cleanser",active:null},{label:"Vitamin C serum",active:"vitc"},{label:"Moisturizer",active:null},{label:"Sunscreen SPF 30+",active:"spf"}];
+  pm=[{label:"Cleanser",active:null},{label:"Retinoid",active:"retinoid"},{label:"Moisturizer",active:null}];
+  update(); scale();
+})();
+</script>
+</body>
+</html>
